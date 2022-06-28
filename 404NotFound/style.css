@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500&family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+  --gray-primary: #333333;
+  --gray-secundary: #4f4f4f;
+  --gray-third: #bdbdbd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+.title-header {
+  font-family: "Inconsolata", monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  letter-spacing: -0.08em;
+  text-transform: uppercase;
+
+  padding-top: 2rem;
+  padding-left: 3rem;
+
+  color: var(--gray-primary);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  font-family: "Space Mono", monospace;
+  letter-spacing: -0.035em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  justify-content: left;
+
+  padding: 1.5rem;
+}
+
+.img-strawman {
+  padding: 1rem;
+  width: 45%;
+}
+
+.img-strawman img {
+  width: 100%;
+}
+
+.title-content {
+  font-size: 3rem;
+  font-weight: bold;
+
+  max-width: 530px;
+
+  color: var(--gray-primary);
+}
+
+.text-content {
+  font-size: 1.2rem;
+  font-weight: normal;
+
+  max-width: 300px;
+
+  color: var(--gray-secundary);
+}
+
+.btn-homepage {
+  max-width: 216px;
+  padding: 1rem 1rem;
+
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  border-color: transparent;
+  letter-spacing: -35%;
+  background-color: var(--gray-primary);
+
+  transition: all 0.3s;
+  cursor: pointer;
+
+  color: white;
+}
+
+.btn-homepage:hover {
+    background-color: #1f1f1f;
+}
+
+footer {
+  padding: 1rem;
+}
+
+.credits,
+.credits a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: medium;
+  font-size: 0.8rem;
+
+  text-align: center;
+
+  color: var(--gray-third);
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .img-strawman {
+    padding: 1rem;
+    width: 90%;
+  }
+
+  .title-header {
+    padding-top: 1.3rem;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .title-content,
+  .text-content {
+    max-width: 350px;
+  }
+}
